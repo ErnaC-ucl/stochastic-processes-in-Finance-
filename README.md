@@ -44,7 +44,14 @@ The main disadvantage is that, under Vasicek's model, it is theoretically possib
 
 ## 3. Feller square root process 
 Has wide applications in financial mathematics. for instance it is used in the Cox-Ingersoll-Ross short-rate model and in the Heston stochastic volatility model.
-In mathematical finance, the Cox–Ingersoll–Ross (CIR) model describes the evolution of interest rates. It is a type of "one factor model" (short-rate model) as it describes interest rate movements as driven by only one source of market risk. The CIR model specifies that the instantaneous interest rate <img src="https://render.githubusercontent.com/render/math?math=r_{t}"> follows the stochastic differential equation, also named the CIR Process:
+In mathematical finance, the Cox–Ingersoll–Ross (CIR) model describes the evolution of interest rates. It is a type of "one factor model" (short-rate model) as it describes interest rate movements as driven by only one source of market risk. 
+
+The CIR model specifies that the instantaneous interest rate <img src="https://render.githubusercontent.com/render/math?math=r_{t}"> follows the stochastic differential equation, also named the CIR Process:
 <img src="https://render.githubusercontent.com/render/math?math=dr_{t}=a(b-r_{t})\,dt%2B\sigma {\sqrt  {r_{t}}}\,dW_{t}">
 
- 
+ ### We have included Matlab code that does the following:
+- Models GBM using the discretised Euler-Maruyama method
+- Implemented Monte Carlo Simulations to generate various paths and take their mean. See fig below
+![](Images/fsr1.png)
+- Plotted the probability density function of the GBM at different times. Random variable in a GBM model follows a log-normal distribution.
+![](Images/fsr2.jpg)
