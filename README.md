@@ -22,3 +22,26 @@ However, GBM is not a completely realistic model, in particular it falls short o
 ![](Images/gbm1.jpg)
 - Plotted the probability density function of the GBM at different times. Random variable in a GBM model follows a log-normal distribution.
 ![](Images/gbm2.jpg)
+
+## 2. Ornstein-Uhlenbeck process (i.e. Vasicek Model)
+ Ornstein-Uhlenbeck is a mean reverting process that is used in the Vasicek short interest rate model. The model specifies that the instantaneous interest rate follows the stochastic differential equation: <img src="https://render.githubusercontent.com/render/math?math={\displaystyle dr_{t}=a(b-r_{t})\,dt%2B\sigma \,dW_{t}}">,
+ where <img src="https://render.githubusercontent.com/render/math?math=W_{t}" is the Brownian motion, <img src="https://render.githubusercontent.com/render/math?math=\sigma",determines the volatility of the interest rate, b is "long term mean level" (i.e. all future trajectories of will evolve around a mean level b in the long run) and a is the "speed of mean reversion".
+ 
+Vasicek's model was the first one to capture mean reversion, an essential characteristic of the interest rate that sets it apart from other financial prices. Thus, as opposed to stock prices for instance, interest rates cannot rise indefinitely. This is because at very high levels they would hamper economic activity, prompting a decrease in interest rates. Similarly, interest rates do not usually decrease below 0. As a result, interest rates move in a limited range, showing a tendency to revert to a long run value.
+
+The main disadvantage is that, under Vasicek's model, it is theoretically possible for the interest rate to become negative, an undesirable feature under pre-crisis assumptions. This shortcoming was fixed in the Cox–Ingersoll–Ross model, exponential Vasicek model, Black–Derman–Toy model and Black–Karasinski model, among many others. The Vasicek model was further extended in the Hull–White model. 
+
+### We have included Matlab code that does the following:
+- Models OU process using the discretised Euler-Maruyama method
+- Implemented Monte Carlo Simulations to generate various paths and take their mean. 
+![](Images/OU1.jpg)
+- Plotted the probability density function of the OU at different times. 
+![](Images/OU4.jpg)
+- Plotted the asymptotic and theoretical variance vs. sampled variance.
+![](Images/OU2.jpg) 
+- Plotted theoretical vs. sampled autocorrelation function.
+![](Images/OU3.jpg) 
+
+
+ 
+ 
