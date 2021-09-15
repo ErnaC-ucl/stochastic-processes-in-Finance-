@@ -61,6 +61,7 @@ It is often used e.g. for fixed interest rate bonds. If W(t) is a standard Wiene
 
 <img src="https://render.githubusercontent.com/render/math?math={\displaystyle B(t)=W(t)-{\frac {t}{T}}W(T)\,}">
 Simulated path of this process is given below:
+
 ![](Images/bb1.png)
 
 
