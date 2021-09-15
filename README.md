@@ -18,5 +18,7 @@ However, GBM is not a completely realistic model, in particular it falls short o
 
 ### We have included Matlab code that does the following:
 - Models GBM using the discretised Euler-Maruyama method
-- Implemented Monte Carlo Simulations to generate various paths and take their mean
+- Implemented Monte Carlo Simulations to generate various paths and take their mean. See fig below
+![](Images/gbm1.jpg)
 - Plotted the probability density function of the GBM at different times. Random variable in a GBM model follows a log-normal distribution.
+![](Images/gbm2.jpg)
