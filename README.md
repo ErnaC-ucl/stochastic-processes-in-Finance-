@@ -55,3 +55,14 @@ The CIR model specifies that the instantaneous interest rate <img src="https://r
 ![](Images/fsr1.png)
 - Plotted the probability density function of the GBM at different times. Random variable in a GBM model follows a log-normal distribution.
 ![](Images/fsr2.jpg)
+
+## 4. Brownian Bridge
+It is often used e.g. for fixed interest rate bonds. If W(t) is a standard Wiener process (i.e., for t ≥ 0, W(t) is normally distributed with expected value 0 and variance t, and the increments are stationary and independent), then Brownian Bridge is defined as:
+
+<img src="https://render.githubusercontent.com/render/math?math={\displaystyle B(t)=W(t)-{\frac {t}{T}}W(T)\,}">
+Simulated path of this process is given below:
+![](Images/bb1.png)
+
+
+
+
